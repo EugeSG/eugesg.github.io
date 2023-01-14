@@ -1,0 +1,259 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Montserrat',Segoe UI, Tahoma, Geneva, sans-serif
+}
+
+
+/*Boton para ir al principio*/
+
+.btn-up {
+    transition: box-shadow 0.1s ease;
+    background-color: white;
+    border: gray solid 1px;
+    border-radius: 50%;
+    padding: 0.8%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+
+}
+
+.btn-up:hover {
+    box-shadow: 0 0.1rem 0.4rem rgb(0,0,0,0.3);
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5%;
+    margin: 1%;
+    max-width: 100%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: #E8CFC1;
+}
+
+img {
+    border-radius: 50%;
+    max-width:15%;
+    max-height: 15%;
+    transition: transform .2s;
+    
+}
+
+img:hover {
+    transform: scale(2);
+}
+
+#personalInfo {
+    padding-left: 2%;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    justify-content: center;
+}
+
+.info {
+    line-height: 0.5;
+    margin-top: 2%;
+    padding-top: 2%;
+ }
+
+
+
+
+/* Informacion a la izquierda */
+
+.conteiner-general {
+    padding: 0.5%;
+    margin: 1%;
+}
+
+.left-conteiner {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width:25%;
+    min-width: 245px;
+    max-height: 100%;
+    background-color: #F2BD99;
+    position: static;
+    margin-right: 3%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.info-left {
+    text-align: center;
+    margin: 12% 8%  6% 8%;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    font-size: 14px
+
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6%;
+}
+
+.contact {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.progress-content {
+    margin: 10%;
+    line-height: 1px;
+}
+
+/* Información principal */
+
+.principal-conteiner {
+    float: inline-end; 
+    width: 99%;
+    height: 100%;
+    background-color: white;
+
+}
+
+.part-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    padding: 1%;
+    margin: 1%;
+    text-decoration: underline #E8CFC1;
+}
+
+.btn-more {
+    transition: box-shadow 0.2s ease;
+    font-size: larger;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 1.5%;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 1px  gray;
+    min-width: 210px ;
+    width: 80%;
+    border: none; 
+    background-color:#EBEAE9;
+}
+
+/*Botones para más información */
+
+.btn-more:hover {
+    box-shadow: 0 0.1rem 0.4rem rgb(0,0,0,0.3);
+}
+
+.btn-title{
+    display:flex;
+    align-items: center;
+}
+
+.year {
+    align-self: flex-end;
+    font-style: oblique;
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 3px;
+    margin-bottom: 6px;
+    margin-left: 9%;
+    text-align: start;
+}
+
+section i {
+    font-size: 10px;
+    font-weight: normal;
+    margin: 8px;
+}
+
+h4 {
+    margin-left: 12px;
+}
+
+/* Información extra (modal) */
+
+.more{
+    
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0);
+    background-color:	rgba(110, 103, 103, 0.5);
+  }
+
+
+
+.more-content {
+    background-color: #fefefe;
+    opacity: 1;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid grey;
+    max-width: 70%;
+  }
+
+.text-more {
+    text-align: justify;
+    margin: 2% 2.5%;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+  
+
+

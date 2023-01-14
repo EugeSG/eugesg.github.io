@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum interactivo</title>
+
+    <!-- Open Graph-->
+    <meta property="og:title" content="CV" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="https://https://cdn.pixabay.com/photo/2016/06/06/17/05/woman-1439909__340.jpg" />
+    <meta property="og:description" content="Curriculum interactivo de Kasandra Hansen" />
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="css/mediaq.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+
+    <script src="https://kit.fontawesome.com/477a9f863d.js" crossorigin="anonymous"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="functions.js"></script>
+
+    <header id="up" class="conteiner-fluid">
+        <img src="imgs/fotoPerfil.jpg" /> <!--Foto descargada de https://pixabay.com/-->
+
+        <article id="personalInfo">
+            <h1>Kasandra Hansen</h1>
+            <div class="info">
+                <p>Edad: 25</p>
+                <p>Nacionalidad: Argentina</p>
+                <p>Fecha de nacimiento: 12/04/1997</p>
+            </div>
+        </article>
+    </header>
+
+
+    <!-- Button para ir hacia arriba-->
+    <a href="#up">
+        <button class="btn-up">
+            <i class="fa-solid fa-arrow-up fa-xl"></i>
+        </button>
+    </a>
+
+
+    <section class="conteiner-general conteiner-fluid">
+        <!--Informacion a la izquierda ("sobre mí")-->
+        <article class="left-conteiner ">
+            <div class="info-left">
+                <h3 class="fs-4">Sobre mí</h3>
+                <p>Ut sodales ipsum a dictum ornare. Vivamus faucibus lacinia massa ac congue. Vivamus varius, purus sit
+                    amet
+                    varius rutrum, est tellus tincidunt dui, faucibus venenatis ligula est in lorem. Sed mattis orci sit
+                    amet
+                    nisi vestibulum viverra a in est.</p>
+            </div>
+
+            <div class="info-left">
+                <h3 class="fs-4">Contacto</h3>
+                <div class="contacts">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone fa-lg"></i>
+                        <p> +54 1130654103X</p>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-brands fa-instagram fa-lg"></i>
+                        <p> @ksandra.hansen</p>
+                    </div>
+                    <div class="contact">
+                        <i class="fa-solid fa-envelope fa-lg"></i>
+                        <p>khansen@outlook.com </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-left">
+                <h3 class="fs-4">Habilidades</h3>
+                <div class="progress-content">
+                    <p>Mauris tristique varius</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 75%">
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-content">
+                    <p>Ristique varius</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 50%">
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-content">
+                    <p>Sed nisl nibh, ultricies.</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 75%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <!--Información de formación-->
+        <article class="principal-conteiner">
+            <div class=" part-principal">
+                <h2 class="fs-3">Experiencia laboral</h2>
+
+                <button onclick="abrir(name)" name="exp1" class="btn-more">
+                    <div class="btn-title">
+                        <i class="fa-solid fa-circle-plus fa-xl"></i>
+                        <div>
+                            <h4 class="fs-5">Empresa</h4>
+                            <p class="year"> 2017-2018 </p>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="abrir(name)" name="exp2" class="btn-more">
+                    <div class="btn-title">
+                        <i class="fa-solid fa-circle-plus fa-xl"></i>
+                        <div>
+                            <h4 class="fs-5">Empresa</h4>
+                            <p class="year"> 2018-2021 </p>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="abrir(name)" name="exp3" class="btn-more">
+                    <div class="btn-title">
+                        <i class="fa-solid fa-circle-plus fa-xl"></i>
+                        <div>
+                            <h4 class="fs-5">Empresa</h4>
+                            <p class="year"> 2021-2022 </p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+            <div class=" part-principal">
+                <h2 class="fs-3">Formación académica</h2>
+                <button onclick="abrir(name)" name="academia1" class="btn-more">
+                    <div class="btn-title">
+                        <i class="fa-solid fa-circle-plus fa-xl"></i>
+                        <div>
+                            <h4 class="fs-5">Institución</h4>
+                            <p class="year"> 2002-2014 </p>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="abrir(name)" name="academia2" class="btn-more">
+                    <div class="btn-title">
+                        <i class="fa-solid fa-circle-plus fa-xl"></i>
+                        <div>
+                            <h4 class="fs-5">Institución</h4>
+                            <p class="year"> 2015-2021 </p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+            <div class=" part-principal">
+                <h2 class="fs-3">Cursos</h2>
+                <button onclick="abrir(name)" name="curso1" class="btn-more">
+                    <div class="btn-title">
+                        <i class="fa-solid fa-circle-plus fa-xl"></i>
+                        <div>
+                            <h4 class="fs-5">Programación</h4>
+                            <p class="year"> Institución</p>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="abrir(name)" name="curso2" class="btn-more">
+                    <div class="btn-title">
+                        <i class="fa-solid fa-circle-plus fa-xl"></i>
+                        <div>
+                            <h4 class="fs-5">Inglés</h4>
+                            <p class="year"> Institución </p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </article>
+    </section>
+
+
+    <!-- Más información en la experiencia laboral (Modal)-->
+    <div id="exp1" class="more">
+        <div class="more-content">
+            <button type="button" class="btn-close btnClose" aria-label="Close" onclick="cerrar()"></button>
+            <p class="text-more"><span>Puesto 1: </span> Convallis euismod sapien in imperdiet..</p>
+            <p class="text-more"><span>Actividades realizadas: </span> Ut feugiat justo vitae nisi sodales, sed aliquam
+                arcu bibendum. Curabitur condimentum ultricies mi, quis consequat massa malesuada vitae. In gravida
+                dapibus magna, ut rhoncus lorem blandit quis. Phasellus malesuada purus et mi efficitur, quis consequat
+                ex posuere.</p>
+        </div>
+    </div>
+    <div id="exp2" class="more">
+        <div class="more-content">
+            <button type="button" class="btn-close btnClose" aria-label="Close" onclick="cerrar()"></button>
+            <p class="text-more"><span>Puesto 2: </span> Ut feugiat justo vitae nisi sodales.</p>
+            <p class="text-more"><span>Actividades realizadas: </span> Ut feugiat justo vitae nisi sodales, sed aliquam
+                arcu bibendum. Curabitur condimentum ultricies mi, quis consequat massa malesuada vitae. In gravida
+                dapibus magna, ut rhoncus lorem blandit quis. Phasellus malesuada purus et mi efficitur, quis consequat
+                ex posuere.</p>
+        </div>
+    </div>
+    <div id="exp3" class="more">
+        <div class="more-content">
+            <button type="button" class="btn-close btnClose" aria-label="Close" onclick="cerrar()"></button>
+            <p class="text-more"><span>Puesto 3: </span> Ut feugiat justo vitae nisi sodales, sed aliquam arcu bibendum.</p>
+            <p class="text-more"><span>Actividades realizadas: </span> Ut feugiat justo vitae nisi sodales, sed aliquam
+                arcu bibendum. Curabitur condimentum ultricies mi, quis consequat massa malesuada vitae. In gravida
+                dapibus magna, ut rhoncus lorem blandit quis. Phasellus malesuada purus et mi efficitur, quis consequat
+                ex posuere.</p>
+        </div>
+    </div>
+
+    <!-- Más información en la formación académica (Modal)-->
+    <div id="academia1" class="more">
+        <div class="more-content">
+            <button type="button" class="btn-close btnClose" aria-label="Close" onclick="cerrar()"></button>
+            <p class="text-more"><span>Orientación: </span> Donec dignissim, lacus sed semper tempus, lectus velit.</p>
+        </div>
+    </div>
+    <div id="academia2" class="more">
+        <div class="more-content">
+            <button type="button" class="btn-close btnClose" aria-label="Close" onclick="cerrar()"></button>
+            <p class="text-more"><span>Orientación: </span> Nunc ut dapibus ante. Nunc consectetur dui dolor,
+                vitae pellentesque orci mollis non. Aenean at elit vel purus iaculis porta id ut lorem. Quisque sed
+                mauris ex. Ut ullamcorper lectus sagittis felis scelerisque fermentum.</p>
+        </div>
+    </div>
+
+
+    <!-- Más información en cursos (modal)-->
+    <div id="curso1" class="more">
+        <div class="more-content">
+            <button type="button" class="btn-close btnClose" aria-label="Close" onclick="cerrar()"></button>
+            <p class="text-more"><span>Conocimientos adquiridos: </span> Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Nulla non nisi in nisl accumsan eleifend. Morbi porta nec leo ac varius.
+                Integer ultrices efficitur lorem, id auctor orci pellentesque nec. Curabitur vel eros sed neque
+                egestas pharetra. Phasellus ac felis sed nisi tempor dapibus at molestie mi. Maecenas ut risus at
+                justo porttitor vulputate. Ut maximus venenatis pharetra. Mauris placerat porta finibus. Integer sit
+                amet fringilla massa, id ultricies risus.</p>
+        </div>
+    </div>
+    <div id="curso2" class="more">
+        <div class="more-content">
+            <button type="button" class="btn-close btnClose" aria-label="Close" onclick="cerrar()"></button>
+            <p class="text-more"><span>Conocimientos adquiridos: </span> Mauris sem est, blandit sit amet malesuada nec,
+                condimentum id neque. Proin venenatis lectus leo, sit amet consequat risus vestibulum ac. Quisque
+                lacinia
+                tincidunt tortor vel dictum. Vivamus eget ex quis velit iaculis bibendum ac sed dui. Pellentesque
+                habitant
+                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque non orci condimentum,
+                volutpat libero quis, volutpat justo. Vestibulum ac dolor vel neque placerat blandit a nec augue.
+                Curabitur
+                at tellus et ex varius finibus volutpat non sapien. </p>
+        </div>
+
+</body>
+
+</html>
